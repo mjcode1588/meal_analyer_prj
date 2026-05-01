@@ -56,7 +56,7 @@ if start_file is not None:
     img1_np = np.array(img1)
     
     with st.spinner("식전 사진 분석 중..."):
-        area1, dishes1, annotated_img1 = detect_meal(img1_np, "./best (9).pt")
+        area1, dishes1, annotated_img1 = detect_meal(img1_np, "../best (9).pt")
 
     col1, col2 = st.columns(2)
     with col1:
@@ -96,7 +96,7 @@ if start_file is not None:
         img2_np = np.array(img2)
         
         with st.spinner("식후 사진 분석 및 계산 중..."):
-            area2, dishes2, annotated_img2 = detect_meal(img2_np, "./best (9).pt")
+            area2, dishes2, annotated_img2 = detect_meal(img2_np, "../best (9).pt")
 
         col3, col4 = st.columns(2)
         with col3:
